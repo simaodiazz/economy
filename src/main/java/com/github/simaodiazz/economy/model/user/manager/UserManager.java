@@ -38,6 +38,10 @@ public class UserManager {
         }
     }
 
+    public boolean contains(String name) {
+        return users.containsKey(name);
+    }
+
     public HashMap<String, User> getAll() {
         return users;
     }
@@ -50,15 +54,29 @@ public class UserManager {
         }
     }
 
-    public void put(User user) {
-        users.put(user.getName(), user);
-    }
-
     public void create(User user) {
+        users.put(user.getName(), user);
         userDatabase.create(user);
     }
 
     public void update(User user) {
+        users.put(user.getName(), user);
         userDatabase.update(user);
+    }
+
+    public void load(UUID uuid, String name) {
+        User user = find(uuid);
+        if (user == null) {
+            return;
+        }
+
+        users.put(user.getName(), user);
+
+        if (user.getName().equals(name)) {
+            return;
+        }
+
+        user.setName(name);
+        update(user);
     }
 }

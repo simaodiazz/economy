@@ -1,8 +1,10 @@
 package com.github.simaodiazz.economy;
 
 import com.github.simaodiazz.economy.database.SQLProvider;
-import com.github.simaodiazz.economy.model.user.manager.UserManager;
+import com.github.simaodiazz.economy.listener.PlayerJoinListener;
+
 import lombok.AllArgsConstructor;
+import org.bukkit.Bukkit;
 
 @AllArgsConstructor
 public class Loader {
@@ -15,6 +17,7 @@ public class Loader {
         sqlProvider.setup();
 
         // Register listeners
+        Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(main), main);
 
         // Register commands
     }

@@ -36,6 +36,10 @@ public class HistoricParser implements Parser<Historic, String> {
     @Override
     public Historic unparse(String data) {
 
+        if (data.equals("")) {
+            return new Historic(new ArrayList<>());
+        }
+
         Historic historic = new Historic();
         historic.setTransactions(new ArrayList<>());
 
@@ -46,7 +50,6 @@ public class HistoricParser implements Parser<Historic, String> {
             Transaction transaction = transactionParser.unparse(s);
 
             historic.getTransactions().add(transaction);
-
         }
 
         return historic;

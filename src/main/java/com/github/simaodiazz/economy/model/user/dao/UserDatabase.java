@@ -74,8 +74,8 @@ public class UserDatabase implements UserDatabaseService {
         try (PreparedStatement preparedStatement = Main.getInstance().getHikari().getConnection().prepareStatement("INSERT INTO economy_data (uuid, name, balance, historic) VALUES (?, ?, ?, ?)")) {
             preparedStatement.setString(1, user.getUuid().toString());
             preparedStatement.setString(2, user.getName());
-            preparedStatement.setDouble(3, 0.0);
-            preparedStatement.setString(4, "");
+            preparedStatement.setDouble(3, user.getBalance());
+            preparedStatement.setString(4, historicParser.parse(user.getHistoric()));
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
