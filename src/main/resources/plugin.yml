@@ -1,0 +1,23 @@
+name: Economy
+version: 1.0.0-SNAPSHOT
+main: com.github.simaodiazz.economy.Main
+author: simaodiazz
+description: Economy plugin
+load: STARTUP
+website: "https://github.com/simaodiazz"
+depend:
+  - Vault
+softdepend:
+  - PlaceholderAPI
+  - LegendChat
+loadbefore:
+  - Vault
+  - PlaceholderAPI
+  - LegendChat
+commands:
+  balance:
+    aliases:
+      - money
+      - coins
+      - coin
+      - eco

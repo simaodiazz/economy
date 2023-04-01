@@ -1,0 +1,7 @@
+mysql:
+  serverName: ""
+  port: ""
+  databaseName: ""
+  user: ""
+  password: ""
+  config: ""
