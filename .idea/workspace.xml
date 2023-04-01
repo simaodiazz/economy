@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0219ac50-b45b-4bba-af3c-7e96bd005ee7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/listener/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/listener/PlayerJoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/historic/Historic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/historic/Historic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/historic/parser/HistoricParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/historic/parser/HistoricParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/user/dao/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/user/dao/UserDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/user/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/simaodiazz/economy/model/user/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +28,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -50,11 +50,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/simao/IdeaProjects/Economy",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\simao\IdeaProjects\Economy" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
